@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Gif extends Component {
+export default class Gif extends Component {
   handleClick = () => {
     const { selectGif, id } = this.props;
     if (selectGif) {
@@ -18,5 +18,3 @@ class Gif extends Component {
     );
   }
 }
-
-export default Gif;

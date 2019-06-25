@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class SearchBar extends Component {
-  handleUpdate = (event) => {
-    const { searchFunction } = this.props;
-    searchFunction(event.target.value);
+export default class SearchBar extends Component {
+  handleUpdate = (e) => {
+    const { search } = this.props;
+    search(e.target.value);
   }
 
   render() {
@@ -16,5 +16,3 @@ class SearchBar extends Component {
     );
   }
 }
-
-export default SearchBar;

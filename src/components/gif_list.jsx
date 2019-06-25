@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Gif from './gif';
 
-class GifList extends Component {
+export default class GifList extends Component {
   renderList = () => {
     const { gifs, selectGif } = this.props;
     return gifs.map(gif => <Gif id={gif.id} key={gif.id} selectGif={selectGif} />);
@@ -15,5 +15,3 @@ class GifList extends Component {
     );
   }
 }
-
-export default GifList;
