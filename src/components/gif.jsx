@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 export default class Gif extends Component {
-  handleClick = () => {
-    const { selectGif, id } = this.props;
+  handleClick = ({ selectGif, id }) => {
     if (selectGif) {
       selectGif(id);
     }
